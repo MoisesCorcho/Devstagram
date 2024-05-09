@@ -7,11 +7,11 @@
 
 @section('contenido')
     <div class="md:flex md:justify-center">
-        <div class="md:w-1/2 bg-white shadow p-6">
+        <div class="md:w-1/2 bg-gray-800 shadow p-6">
             <form method="POST" action="{{ route('profile.store')}}" enctype="multipart/form-data" class="mt-10 md:mt-0">
                 @csrf
                 <div class="mb-5">
-                    <label for="username" class="mb-2 block uppercase text-gray-500 font-bold">
+                    <label for="username" class="mb-2 block uppercase text-white font-bold">
                            Username
                     </label>
                     <input
@@ -19,7 +19,7 @@
                         name="username"
                         type="text"
                         placeholder="Tu Nombre de Usuario"
-                        class="border p-3 w-full rounded-lg @error('username') border-red-500 @enderror"
+                        class="border p-3 w-full rounded-lg @error('username') border-red-500 @enderror bg-gray-900 placeholder-gray-300 text-white border-gray-700 focus:outline-none focus:ring focus:ring-blue-900"
                         value="{{ auth()->user()->username }}"
                     />
 
@@ -29,14 +29,14 @@
                 </div>
 
                 <div class="mb-5">
-                    <label for="imagen" class="mb-2 block uppercase text-gray-500 font-bold">
+                    <label for="imagen" class="mb-2 block uppercase text-white font-bold">
                            Imagen Perfil
                     </label>
                     <input
                         id="image"
                         name="image"
                         type="file"
-                        class="border p-3 w-full rounded-lg"
+                        class="border p-3 w-full rounded-lg bg-gray-900 placeholder-gray-300 text-white border-gray-700 focus:outline-none focus:ring focus:ring-blue-900"
                         value=""
                         accept=".jpg, .jpeg, .png"
                     />

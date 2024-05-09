@@ -13,6 +13,6 @@
             {{ $posts->links() }}
         </div>
     @else
-        <p class="text-center">No Hay Posts</p>
+        <p class="text-center text-white">No Hay Posts</p>
     @endif
 </div>
