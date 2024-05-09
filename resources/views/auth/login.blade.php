@@ -1,4 +1,4 @@
-<x-Auth.layout.App
+<x-Auth.Layout.App
     title="Devstagram"
     header="Devstagram"
     contentHeader="Ingresa para ver que han publicado tus amigos."
@@ -7,5 +7,5 @@
     footerButtonRoute="register">
     <x-Form.loginForm>
     </x-Form.loginForm>
-</x-Auth.layout.App>
+</x-Auth.Layout.App>
 

@@ -12,7 +12,7 @@
     <div class="min-h-screen flex flex-col items-center justify-center bg-gray-900">
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-xl content-start mb-6" style="width: 400px;">
-            <div class="text-center mb-2 block uppercase font-bold mb-6">
+            <div class="text-center block uppercase font-bold mb-6">
                 <h1 class="text-4xl text-white">{{ $header }}</h1>
             </div>
 

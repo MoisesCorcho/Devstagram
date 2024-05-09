@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Auth\layout;
+namespace App\View\Components\Auth\Layout;
 
 use Closure;
 use Illuminate\Contracts\View\View;
