@@ -6,8 +6,11 @@
         @vite('resources/css/app.css')
         @stack('styles')
         <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
         <title>DevStagram - @yield('titulo')</title>
+
         @vite('resources/js/app.js')
+        @livewireStyles
     </head>
     <body class="bg-gray-900">
 
@@ -25,5 +28,6 @@
         </x-Layout.Footer>
 
         <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+        @livewireScripts
     </body>
 </html>
